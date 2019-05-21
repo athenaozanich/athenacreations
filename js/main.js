@@ -32,12 +32,13 @@ xmlhttp.onreadystatechange = function() {
 
             parsedProjectCard = $.parseHTML(projectCard);
             //console.log(parsedProjectCard);
+
             projectCards.push(parsedProjectCard[0]);
 
 
-            vertPortWrapper.append(projectCards[i]);
+            vertPortWrapper.appendChild(projectCards[i]);
             }
-            console.log(projectCards[0]);
+
 
 
          }
@@ -49,3 +50,5 @@ xmlhttp.send(null);
 function openModal(modalName){
 
 }
+let appendedCards = document.querySelectorAll(".port-item");
+console.log(projectCards);
