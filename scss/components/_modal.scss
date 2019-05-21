@@ -6,8 +6,8 @@
   position: fixed;
   top: -23px;
   left: -130px;
-  width: 108vw;
-  height: 106vh;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.87);
   overflow: hidden;
   cursor: default; }
@@ -17,14 +17,14 @@
       overflow: visible; } }
   @media (min-width: 1200px) {
     .port-item.modal {
-      left: -85px;
-      top: -37px; } }
+      left: -32px;
+      top: -30px; } }
   .port-item.modal img {
     display: block;
-    width: 65%;
+    width: 50%;
     margin: auto; }
-  .port-item.modal h4 {
-    display: block;
+  .port-item.modal h6 {
+    display: inline-block;
     width: 65%;
     margin: 30px auto 0px auto;
     text-align: center; }
@@ -32,6 +32,9 @@
     display: block; }
   .port-item.modal .container {
     margin: 0px auto;
-    width: 65%; }
+    width: 40%; }
   .port-item.modal .close {
     display: block; }
+  .port-item.modal a{
+    width: 75%;
+    margin: auto;}

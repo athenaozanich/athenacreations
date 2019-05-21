@@ -53,12 +53,13 @@ nav a:hover, .active {
 
 section p {
   font-size: 1.25em;
-  width: 95%;
-  margin: auto;
-  padding: 5px;
-  text-shadow: 3px 3px 2.5px #000;////////
-  color: hsla(172, 100%, 35%, 1);
-  }
+    width: 95%;
+    margin: auto;
+    padding: 5px;
+    text-shadow: 3px 3px 2.5px #000;
+    color: #00b39b;
+
+}
 #bio{
   display: block;
   width: 95%;
@@ -80,7 +81,8 @@ aside p {
 
 span {
   color: hsla(302, 77%, 99%, 1);
-  font-style: italic;}
+  font-style: italic;
+  text-align:center;}
 
 @media (min-width: 750px) {
   #availability .block-quote p {

@@ -46,7 +46,6 @@ section {
   border-radius: 5px;
   background-color: hsla(297, 35%, 15%, 0.4);
   box-shadow: 5px 5px 11px #000;
-  padding: 5%;
   }
 section:hover{
   background-color: hsla(297, 35%, 15%, 0.85);
@@ -54,10 +53,18 @@ section:hover{
 @media only screen and (min-width:750px){
   .vert-wrapper section {
     margin-top: 30px;
-    width: 46%;
-    min-height: 600px;
+    width: 21%;
+    min-height: 400px;
     display: inline-grid;
     margin: 2%;
+
+  }
+}
+@media only screen and (min-width:1200px){
+  .vert-wrapper section {
+
+    width: 21%;
+
 
   }
 }

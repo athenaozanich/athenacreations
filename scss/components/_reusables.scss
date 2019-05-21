@@ -46,7 +46,7 @@
   text-align: center; }
 
 .close {
-  color: red;
+  color: #ff00aa;
   position: absolute;
   top: 10%;
   right: 10%;
@@ -69,4 +69,13 @@
   }
   .calendar.tablet {
     display: none; }
+}
+.port-item p{
+  width: 95%;
+  height: 100px;
+  overflow: overlay;
+  padding: 5px;
+}
+.trnsprntOverlay{
+  opacity: 0;
 }

@@ -3,52 +3,78 @@ let projectCards = [];
 let vertPortWrapper = document.querySelector(".vert-wrapper");
 let projectCard;
 let parsedProjectCard;
+let modal;
 //get data from db
-var xmlhttp = new XMLHttpRequest();
-xmlhttp.open("GET", "js/portData.json", true);
-xmlhttp.onreadystatechange = function() {
-    if (xmlhttp.readyState == 4) {
-        if(xmlhttp.status == 200) {
-            var json = JSON.parse(xmlhttp.responseText);
-            //store data array
-            let projects = json.portItems;
-            //console.log(projects);
-            //loop through data
-            for (var i = 0; i < projects.length; i++) {
-              //create variable for project card
-             projectCard =
-              `<section class="port-item card__${i}">
-                  <a href="${projects[i].url}">
-                    <h6>${projects[i].name}</h6>
-                    <img src="imgs/${projects[i].img}" alt="${projects[i].name}"/>
-                  </a>
-                  <aside>
-                    <p>
-                      ${projects[i].desc}
-                    </p>
-                  </aside>
-               </section>`;
-            //append card to DOM
+fetch('js/portData.json')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(myJson) {
 
-            parsedProjectCard = $.parseHTML(projectCard);
-            //console.log(parsedProjectCard);
-
-            projectCards.push(parsedProjectCard[0]);
-
-
-            vertPortWrapper.appendChild(projectCards[i]);
-            }
-
-
-
-         }
+    //store data array
+    let projects = myJson.portItems;
+    //console.log(projects);
+    //loop through data
+    for (var i = 0; i < projects.length; i++) {
+      //create variable for project card
+     projectCard =
+      `<section class="port-item card__${i}">
+        <span class="close">X</span>
+          <a href="${projects[i].url}">
+            <h6>${projects[i].name}</h6>
+          </a>
+          <img src="imgs/${projects[i].img}" alt="${projects[i].name}"/>
+          <aside>
+            <p>
+              ${projects[i].desc}
+            </p>
+          </aside>
+          <span>Click to expand<span/>
+       </section>`;
+    //parse string into html
+    parsedProjectCard = $.parseHTML(projectCard);
+    projectCards.push(parsedProjectCard[0]);
+    //append card to DOM
+    vertPortWrapper.appendChild(projectCards[i]);
     }
-return projectCards;
-};
-xmlhttp.send(null);
+  assignListeners(projectCards);
+  return projectCards;
+  });
 
-function openModal(modalName){
 
+function assignListeners(projectCards){
+  let appendedCards = document.querySelectorAll(".port-item");
+  for (var i = 0; i < appendedCards.length; i++) {
+    appendedCards[i].addEventListener("click", function(e){
+
+      for (var i = 0; i < projectCards.length; i++) {
+
+        if (e.target == projectCards[i]) {
+            modalHandler(e.target);
+        }
+      }
+    });
+  }
 }
-let appendedCards = document.querySelectorAll(".port-item");
-console.log(projectCards);
+function modalHandler(projCard){
+  if (modal != true) {
+    projCard.classList.add("modal");
+    modal = true;
+  }else{
+    projCard.classList.remove("modal");
+    modal = false;
+  }
+  let close = document.querySelectorAll(".close");
+  for (var i = 0; i < close.length; i++) {
+    close[i].addEventListener("click", function(e){
+      for (var i = 0; i < close.length; i++) {
+        if (e.target == close[i]) {
+          projCard.classList.remove("modal");
+          modal = false;
+        }
+      }
+
+    });
+  }
+  return modal;
+}
