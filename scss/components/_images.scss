@@ -1,0 +1,56 @@
+/**************************/
+/*         IMAGES         */
+/**************************/
+
+
+/**************************/
+/*        Soc Med         */
+/**************************/
+svg {
+  display: block;
+  margin: auto;
+  width: 55px; }
+img{
+  border: 1px solid hsla(302, 77%, 99%, 1);
+  box-shadow: 5px 5px 5px #000;
+}
+.outer-shape {
+  opacity: 1;
+  fill: black; }
+
+.inner-shape {
+  opacity: 1;
+  fill: white; }
+
+.port-item {
+  min-height:550px;
+  width: 98%;
+  display: inline-grid;
+  margin: 1%;}
+.port-item > .container{
+  padding:15px;}
+  @media (min-width: 1200px) {
+    .port-item {
+      width: 48%;} }
+
+    .port-item img {
+      max-width: 75%;
+      display:block;
+      margin:auto;
+      margin-bottom: 25px;
+      }
+
+#about img{
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+@media only screen and (min-width:750px){
+  #about img{
+    width: 20%;
+    display: inline-block;
+    margin: 0% 5%;
+  }
+
+
+}

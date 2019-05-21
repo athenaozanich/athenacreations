@@ -1,0 +1,24 @@
+/**************************/
+/*       NAVIGATION       */
+/**************************/
+nav{
+  margin: auto;
+  display: block;
+  text-align: center;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+nav a{
+  display: inline-table;
+}
+@media (min-width: 1250px) {
+  nav {
+    float:right;
+    a {
+      width: 95px;
+      margin:5px;
+      height: 50px;
+      padding: 15px; }
+  }
+}

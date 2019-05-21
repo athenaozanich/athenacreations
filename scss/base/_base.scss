@@ -1,0 +1,88 @@
+/* Global Layout Set-up */
+* {
+  font-variant-ligatures: no-common-ligatures;
+  transition: all 0.85s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-sizing: border-box;
+}
+
+/*content containers*/
+header {
+  z-index: 2;
+  width: 100%;
+  padding: 15px 5%;
+  border-bottom: 1px solid hsla(298, 37%, 40%, 0.75);
+  background-color: hsla(297, 35%, 15%, 1);
+  box-shadow: 10px 10px 10px #000;
+  position: relative;
+  }
+@media only screen and (min-width:1250px){
+  header{
+    position: fixed;
+    top:0px;
+  }
+}
+body {
+  font-family: "Raleway", "Georgia", "serif";
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  background-image: url("../imgs/planet-mountains.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-color: #111;
+}
+
+main {
+  z-index: 1;
+  position: relative;
+  width: 95%;
+  margin: 50px auto 0px auto;
+  padding: 2.5%; }
+
+section {
+  margin: auto;
+  margin-top: 30px;
+  width: 96%;
+  border-radius: 5px;
+  background-color: hsla(297, 35%, 15%, 0.4);
+  box-shadow: 5px 5px 11px #000;
+  padding: 5%;
+  }
+section:hover{
+  background-color: hsla(297, 35%, 15%, 0.85);
+}
+@media only screen and (min-width:750px){
+  .vert-wrapper section {
+    margin-top: 30px;
+    width: 46%;
+    min-height: 600px;
+    display: inline-grid;
+    margin: 2%;
+
+  }
+}
+
+aside {
+  width: 90%;
+  margin: auto;
+  border-radius: 4px;
+  background-color: hsla(297, 35%, 22%, 0.35);
+  box-shadow: 5px 5px 5px #000;
+}
+button {
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;}
+footer{
+  z-index: 2;
+  width: 100%;
+  border-top: 1px solid hsla(298, 37%, 40%, 0.75);
+  background-color: #301831;
+  content: "";
+  display: table;
+  clear: both;
+  h3{
+    float: left;
+    margin: 15px;
+  }
+}

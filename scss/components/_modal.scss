@@ -1,0 +1,37 @@
+/**************************/
+/*         modal          */
+/**************************/
+.port-item.modal {
+  z-index: 1000;
+  position: fixed;
+  top: -23px;
+  left: -130px;
+  width: 108vw;
+  height: 106vh;
+  background-color: rgba(0, 0, 0, 0.87);
+  overflow: hidden;
+  cursor: default; }
+  @media (min-width: 750px) {
+    .port-item.modal {
+      display: block;
+      overflow: visible; } }
+  @media (min-width: 1200px) {
+    .port-item.modal {
+      left: -85px;
+      top: -37px; } }
+  .port-item.modal img {
+    display: block;
+    width: 65%;
+    margin: auto; }
+  .port-item.modal h4 {
+    display: block;
+    width: 65%;
+    margin: 30px auto 0px auto;
+    text-align: center; }
+  .port-item.modal .mobile {
+    display: block; }
+  .port-item.modal .container {
+    margin: 0px auto;
+    width: 65%; }
+  .port-item.modal .close {
+    display: block; }

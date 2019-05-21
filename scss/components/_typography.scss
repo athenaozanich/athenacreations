@@ -1,0 +1,106 @@
+/**************************/
+/*       TYPOGRAPHY       */
+/**************************/
+footer a {
+  display: inline-block; }
+
+%headlines{
+  display:block;
+  font-family: 'Bilbo Swash Caps', cursive;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 2.5em;
+  margin: 5px;
+  color: hsla(320, 100%, 50%, 1);
+  text-transform: capitalize;
+  text-shadow: 5px 5px 5px black;
+  font-weight: lighter;
+}
+
+h1, h2, h3, h4, h5{
+  @extend %headlines;
+}
+
+p, h6{
+  @extend %headlines;
+  text-transform: none;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  font-family: "Orbitron", "Courier New", "monospace", "sans-serif";
+  color: hsla(174, 100%, 50%, 1);
+}
+#myName{
+  @extend %headlines;
+  font-size:2rem;
+  display: block; }
+@media (min-width: 1250px) {
+  #myName {
+    font-size:3rem;
+    display: inline-block;}}
+a{
+  @extend %headlines;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  font-family: "Orbitron", "Courier New", "monospace", "sans-serif";
+  color: hsla(174, 100%, 50%, 1);
+}
+nav a:hover, .active {
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px hsla(0, 0%, 0%, 1);
+  text-shadow: 0px 0px 20px hsla(296, 100%, 69%, 1);
+}
+
+section p {
+  font-size: 1.25em;
+  width: 95%;
+  margin: auto;
+  padding: 5px;
+  text-shadow: 3px 3px 2.5px #000;////////
+  color: hsla(172, 100%, 35%, 1);
+  }
+#bio{
+  display: block;
+  width: 95%;
+  margin: auto;
+}
+@media only screen and (min-width:750px){
+  #bio{
+    display: inline-block;
+    width: 60%;
+    margin: 5% 2%;
+    vertical-align: top;
+  }
+}
+#bio p{
+  margin-top:2%;
+}
+aside p {
+  min-height: 75px;}
+
+span {
+  color: hsla(302, 77%, 99%, 1);
+  font-style: italic;}
+
+@media (min-width: 750px) {
+  #availability .block-quote p {
+    width: 100%; } }
+@media (min-width: 1200px) {
+  #availability .block-quote p {
+    width: 500px; } }
+
+@media (min-width: 750px) {
+  .block-quote {
+    width: 25%;
+    min-width: 200px;
+    display: inline-block;
+    margin-left: 2.5%; }
+    .block-quote p {
+      width: 183px; }
+    .block-quote h3 {
+      text-align: left;
+      width: 50px;
+      margin-left: 30px; } }
+@media (min-width: 1200px) {
+  .block-quote {
+    margin-left: 7%; } }
