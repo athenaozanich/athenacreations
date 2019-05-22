@@ -441,7 +441,8 @@ section {
   box-shadow: 5px 5px 11px #000; }
 
 section:hover {
-  background-color: rgba(50, 25, 52, 0.85); }
+  background-color: rgba(50, 25, 52, 0.85);
+  box-shadow: 0px 0 20px #6e3772; }
 
 aside {
   width: 90%;
@@ -700,9 +701,9 @@ img {
   margin-bottom: 25px; }
 
 .container > img.profile {
-  width: 25%;
+  width: 15%;
   display: inline-block;
-  margin-left: 16.66%; }
+  margin-left: 23.33%; }
 
 @media only screen and (min-width: 750px) {
   .vert-wrapper section {
