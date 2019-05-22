@@ -20,16 +20,15 @@ fetch('js/portData.json')
      projectCard =
       `<section class="port-item card__${i}">
         <span class="close">X</span>
-          <a href="${projects[i].url}">
-            <h6>${projects[i].name}</h6>
-          </a>
+        <h4>${projects[i].name}</h4>
           <img src="imgs/${projects[i].img}" alt="${projects[i].name}"/>
           <aside>
             <p>
               ${projects[i].desc}
             </p>
           </aside>
-          <span>Click to expand<span/>
+          <a href="${projects[i].url}">View Site</a>
+          <a href="${projects[i].repo}">View Repo</a>
        </section>`;
     //parse string into html
     parsedProjectCard = $.parseHTML(projectCard);
@@ -37,44 +36,25 @@ fetch('js/portData.json')
     //append card to DOM
     vertPortWrapper.appendChild(projectCards[i]);
     }
-  assignListeners(projectCards);
   return projectCards;
   });
 
 
-function assignListeners(projectCards){
-  let appendedCards = document.querySelectorAll(".port-item");
-  for (var i = 0; i < appendedCards.length; i++) {
-    appendedCards[i].addEventListener("click", function(e){
+  vertPortWrapper.addEventListener('click', e => {
+    const projectCard = e.target.closest(".port-item");
+    if (e.target.className != 'close' && e.target.tagName !== 'H6'){
+        modalHandler(projectCard);
+    }
 
-      for (var i = 0; i < projectCards.length; i++) {
+  });
 
-        if (e.target == projectCards[i]) {
-            modalHandler(e.target);
-        }
-      }
-    });
-  }
-}
-function modalHandler(projCard){
-  if (modal != true) {
-    projCard.classList.add("modal");
-    modal = true;
-  }else{
-    projCard.classList.remove("modal");
-    modal = false;
-  }
-  let close = document.querySelectorAll(".close");
-  for (var i = 0; i < close.length; i++) {
-    close[i].addEventListener("click", function(e){
-      for (var i = 0; i < close.length; i++) {
-        if (e.target == close[i]) {
-          projCard.classList.remove("modal");
-          modal = false;
-        }
-      }
 
-    });
+  function modalHandler(projectCard) {
+    projectCard.classList.add('modal');
+
+    const close = projectCard.querySelector('.close');
+    close.addEventListener("click", function (e) {
+      projectCard.classList.remove("modal");
+    })
+
   }
-  return modal;
-}

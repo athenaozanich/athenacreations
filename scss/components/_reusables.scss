@@ -24,15 +24,11 @@
 .mobile {
   display: block;
   margin: auto; }
-  @media (min-width: 750px) {
-    .mobile {
-      display: none; } }
+
 
 .hidden, .desktop {
   display: none; }
-  @media (min-width: 750px) {
-    .hidden {
-      display: block; } }
+
 
 .widget {
   max-width: 80%;
@@ -60,19 +56,10 @@
 
 .calendar {
   margin: auto; }
-@media (min-width: 1200px) {
-  .calendar {
-    margin: 30px auto;
-  }
-  .calendar.desktop {
-    display: block;
-  }
-  .calendar.tablet {
-    display: none; }
-}
+
 .port-item p{
   width: 95%;
-  height: 100px;
+  height: 150px;
   overflow: overlay;
   padding: 5px;
 }

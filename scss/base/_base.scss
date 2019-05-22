@@ -15,12 +15,7 @@ header {
   box-shadow: 10px 10px 10px #000;
   position: relative;
   }
-@media only screen and (min-width:1250px){
-  header{
-    position: fixed;
-    top:0px;
-  }
-}
+
 body {
   font-family: "Raleway", "Georgia", "serif";
   color: white;
@@ -50,24 +45,6 @@ section {
 section:hover{
   background-color: hsla(297, 35%, 15%, 0.85);
 }
-@media only screen and (min-width:750px){
-  .vert-wrapper section {
-    margin-top: 30px;
-    width: 21%;
-    min-height: 400px;
-    display: inline-grid;
-    margin: 2%;
-
-  }
-}
-@media only screen and (min-width:1200px){
-  .vert-wrapper section {
-
-    width: 21%;
-
-
-  }
-}
 
 aside {
   width: 90%;
@@ -93,3 +70,8 @@ footer{
     margin: 15px;
   }
 }
+.infoBox{
+  margin-bottom: 15px;
+  text-align: center;}
+.top{
+  margin-top: 130px;}

@@ -1,5 +1,11 @@
 // Font Stacks
 
+@font-face {
+  font-family: 'Cardinal';
+  src: url('components/fonts/Cardinal.ttf') format('truetype');
+}
+@import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps');
+
 $font-url--google        : 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
 $font-family--primary    : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-family--secondary  : 'Cardinal', Helvetica, Arial, sans-serif;
@@ -23,9 +29,3 @@ $text-color-grey  	 		 : #828282;
 
 $purple-majesty 		 		 : #084452;
 $scooter        		 		 : #39add1;
-
-@font-face {
-  font-family: 'Cardinal';
-  src: url('components/fonts/Cardinal.ttf') format('truetype');
-}
-@import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps');

@@ -20,7 +20,7 @@ img{
 
 .inner-shape {
   opacity: 1;
-  fill: white; }
+  fill: #00ffe6; }
 
 .port-item {
   min-height:550px;
@@ -29,9 +29,7 @@ img{
   margin: 1%;}
 .port-item > .container{
   padding:15px;}
-  @media (min-width: 1200px) {
-    .port-item {
-      width: 48%;} }
+
 
     .port-item img {
       max-width: 75%;
@@ -40,17 +38,9 @@ img{
       margin-bottom: 25px;
       }
 
-#about img{
-  width: 50%;
-  display: block;
-  margin: auto;
-}
-@media only screen and (min-width:750px){
-  #about img{
-    width: 20%;
-    display: inline-block;
-    margin: 0% 5%;
-  }
-
+.container > img.profile{
+  width: 25%;
+  display: inline-block;
+  margin-left:16.66%;
 
 }

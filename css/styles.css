@@ -415,10 +415,6 @@ header {
   box-shadow: 10px 10px 10px #000;
   position: relative; }
 
-@media only screen and (min-width: 1250px) {
-  header {
-    position: fixed;
-    top: 0px; } }
 body {
   font-family: "Raleway", "Georgia", "serif";
   color: white;
@@ -447,16 +443,6 @@ section {
 section:hover {
   background-color: rgba(50, 25, 52, 0.85); }
 
-@media only screen and (min-width: 750px) {
-  .vert-wrapper section {
-    margin-top: 30px;
-    width: 21%;
-    min-height: 400px;
-    display: inline-grid;
-    margin: 2%; } }
-@media only screen and (min-width: 1200px) {
-  .vert-wrapper section {
-    width: 21%; } }
 aside {
   width: 90%;
   margin: auto;
@@ -481,52 +467,12 @@ footer {
     float: left;
     margin: 15px; }
 
-/**************************/
-/*         modal          */
-/**************************/
-.port-item.modal {
-  z-index: 1000;
-  position: fixed;
-  top: -23px;
-  left: -130px;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.87);
-  overflow: hidden;
-  cursor: default; }
-
-@media (min-width: 750px) {
-  .port-item.modal {
-    display: block;
-    overflow: visible; } }
-@media (min-width: 1200px) {
-  .port-item.modal {
-    left: -32px;
-    top: -30px; } }
-.port-item.modal img {
-  display: block;
-  width: 50%;
-  margin: auto; }
-
-.port-item.modal h6 {
-  display: inline-block;
-  width: 65%;
-  margin: 30px auto 0px auto;
+.infoBox {
+  margin-bottom: 15px;
   text-align: center; }
 
-.port-item.modal .mobile {
-  display: block; }
-
-.port-item.modal .container {
-  margin: 0px auto;
-  width: 40%; }
-
-.port-item.modal .close {
-  display: block; }
-
-.port-item.modal a {
-  width: 75%;
-  margin: auto; }
+.top {
+  margin-top: 130px; }
 
 /**************************/
 /*       TYPOGRAPHY       */
@@ -534,7 +480,7 @@ footer {
 footer a {
   display: inline-block; }
 
-h1, h2, h3, h4, h5, p, h6, #myName, a {
+h1, h2, h3, h4, h5, #myName, a {
   display: block;
   font-family: 'Bilbo Swash Caps', cursive;
   text-align: center;
@@ -552,16 +498,14 @@ p, h6 {
   font-size: 1.5rem;
   letter-spacing: 0.5px;
   font-family: "Orbitron", "Courier New", "monospace", "sans-serif";
-  color: #00ffe6; }
+  color: #00ffe6;
+  font-weight: lighter;
+  text-align: center; }
 
 #myName {
   font-size: 2rem;
   display: block; }
 
-@media (min-width: 1250px) {
-  #myName {
-    font-size: 3rem;
-    display: inline-block; } }
 a {
   font-size: 1.5rem;
   letter-spacing: 0.5px;
@@ -579,53 +523,24 @@ section p {
   margin: auto;
   padding: 5px;
   text-shadow: 3px 3px 2.5px #000;
-  color: #00b39b; }
+  color: #00dcbf; }
 
 #bio {
   display: block;
   width: 95%;
   margin: auto; }
 
-@media only screen and (min-width: 750px) {
-  #bio {
-    display: inline-block;
-    width: 60%;
-    margin: 5% 2%;
-    vertical-align: top; } }
 #bio p {
   margin-top: 2%; }
 
 aside p {
   min-height: 75px; }
 
-span {
+span, .port-item a {
   color: #fefafe;
   font-style: italic;
   text-align: center; }
 
-@media (min-width: 750px) {
-  #availability .block-quote p {
-    width: 100%; } }
-@media (min-width: 1200px) {
-  #availability .block-quote p {
-    width: 500px; } }
-@media (min-width: 750px) {
-  .block-quote {
-    width: 25%;
-    min-width: 200px;
-    display: inline-block;
-    margin-left: 2.5%; }
-
-  .block-quote p {
-    width: 183px; }
-
-  .block-quote h3 {
-    text-align: left;
-    width: 50px;
-    margin-left: 30px; } }
-@media (min-width: 1200px) {
-  .block-quote {
-    margin-left: 7%; } }
 /**************************/
 /*        Reusables       */
 /**************************/
@@ -653,15 +568,9 @@ span {
   display: block;
   margin: auto; }
 
-@media (min-width: 750px) {
-  .mobile {
-    display: none; } }
 .hidden, .desktop {
   display: none; }
 
-@media (min-width: 750px) {
-  .hidden {
-    display: block; } }
 .widget {
   max-width: 80%;
   padding: 10px;
@@ -689,23 +598,53 @@ span {
 .calendar {
   margin: auto; }
 
-@media (min-width: 1200px) {
-  .calendar {
-    margin: 30px auto; }
-
-  .calendar.desktop {
-    display: block; }
-
-  .calendar.tablet {
-    display: none; } }
 .port-item p {
   width: 95%;
-  height: 100px;
+  height: 150px;
   overflow: overlay;
   padding: 5px; }
 
 .trnsprntOverlay {
   opacity: 0; }
+
+/**************************/
+/*         modal          */
+/**************************/
+.port-item.modal {
+  z-index: 1000;
+  position: fixed;
+  top: -23px;
+  left: -130px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.87);
+  overflow: hidden;
+  cursor: default; }
+
+.port-item.modal img {
+  display: block;
+  width: 50%;
+  margin: auto; }
+
+.port-item.modal h4 {
+  display: inline-block;
+  width: 65%;
+  margin: 30px auto 0px auto;
+  text-align: center; }
+
+.port-item.modal .mobile {
+  display: block; }
+
+.port-item.modal .container {
+  margin: 0px auto;
+  width: 40%; }
+
+.port-item.modal .close {
+  display: block; }
+
+.port-item.modal a {
+  width: 75%;
+  margin: auto; }
 
 /**************************/
 /*       NAVIGATION       */
@@ -722,14 +661,6 @@ nav {
 nav a {
   display: inline-table; }
 
-@media (min-width: 1250px) {
-  nav {
-    float: right; }
-    nav a {
-      width: 95px;
-      margin: 5px;
-      height: 50px;
-      padding: 15px; } }
 /**************************/
 /*         IMAGES         */
 /**************************/
@@ -751,7 +682,7 @@ img {
 
 .inner-shape {
   opacity: 1;
-  fill: white; }
+  fill: #00ffe6; }
 
 .port-item {
   min-height: 550px;
@@ -762,24 +693,108 @@ img {
 .port-item > .container {
   padding: 15px; }
 
-@media (min-width: 1200px) {
-  .port-item {
-    width: 48%; } }
 .port-item img {
   max-width: 75%;
   display: block;
   margin: auto;
   margin-bottom: 25px; }
 
-#about img {
-  width: 50%;
-  display: block;
-  margin: auto; }
+.container > img.profile {
+  width: 25%;
+  display: inline-block;
+  margin-left: 16.66%; }
 
 @media only screen and (min-width: 750px) {
-  #about img {
+  .vert-wrapper section {
+    margin-top: 30px;
+    width: 21%;
+    min-height: 350px;
+    display: inline-block;
+    margin: 2%;
+    padding: 1%; }
+
+  .port-item a {
+    width: 25%;
+    margin-left: 11%;
+    display: inline;
+    font-size: medium; }
+
+  .infoBox img {
     width: 20%;
     display: inline-block;
-    margin: 0% 5%; } }
+    margin: 0% 5%; }
+
+  .port-item.modal {
+    display: block;
+    overflow: visible; }
+
+  .hidden {
+    display: block; }
+
+  .mobile {
+    display: none; }
+
+  .block-quote {
+    width: 25%;
+    min-width: 200px;
+    display: inline-block;
+    margin-left: 2.5%; }
+
+  .block-quote p {
+    width: 183px; }
+
+  .block-quote h3 {
+    text-align: left;
+    width: 50px;
+    margin-left: 30px; }
+
+  #availability .block-quote p {
+    width: 100%; }
+
+  #bio {
+    display: inline-block;
+    width: 60%;
+    vertical-align: top; } }
+@media only screen and (min-width: 1200px) {
+  .vert-wrapper section {
+    width: 21%; }
+
+  .port-item {
+    width: 48%; }
+
+  .port-item.modal {
+    left: -32px;
+    top: -30px; }
+
+  .calendar {
+    margin: 30px auto; }
+
+  .calendar.desktop {
+    display: block; }
+
+  .calendar.tablet {
+    display: none; }
+
+  #availability .block-quote p {
+    width: 500px; }
+
+  .block-quote {
+    margin-left: 7%; } }
+@media only screen and (min-width: 1250px) {
+  header {
+    position: fixed;
+    top: 0px; }
+
+  nav {
+    float: right; }
+    nav a {
+      width: 95px;
+      margin: 5px;
+      height: 50px;
+      padding: 15px; }
+
+  #myName {
+    font-size: 3rem;
+    display: inline-block; } }
 
 /*# sourceMappingURL=styles.css.map */
