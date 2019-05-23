@@ -62,7 +62,9 @@
   height: 150px;
   overflow: overlay;
   padding: 5px;
+  margin: 2%;
 }
-.trnsprntOverlay{
-  opacity: 0;
+.port-item:hover{
+  background-color: hsla(297, 35%, 15%, 0.85);
+  box-shadow: 0px 0 20px #6e3772;
 }

@@ -50,7 +50,9 @@
     width: 21%;
   }
   .port-item {
-    width: 48%;}
+      width: 40%;
+      display: inline-block;
+      margin-left: 6%;}
   .port-item.modal {
     left: -32px;
     top: -30px; }

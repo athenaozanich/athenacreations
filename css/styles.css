@@ -440,16 +440,13 @@ section {
   background-color: rgba(50, 25, 52, 0.4);
   box-shadow: 5px 5px 11px #000; }
 
-section:hover {
-  background-color: rgba(50, 25, 52, 0.85);
-  box-shadow: 0px 0 20px #6e3772; }
-
 aside {
   width: 90%;
-  margin: auto;
+  margin: auto auto 5% auto;
   border-radius: 4px;
   background-color: rgba(74, 36, 76, 0.35);
-  box-shadow: 5px 5px 5px #000; }
+  box-shadow: 5px 5px 5px #000;
+  padding: 2%; }
 
 button {
   cursor: pointer;
@@ -470,7 +467,8 @@ footer {
 
 .infoBox {
   margin-bottom: 15px;
-  text-align: center; }
+  text-align: center;
+  background-color: #321934; }
 
 .top {
   margin-top: 130px; }
@@ -603,10 +601,12 @@ span, .port-item a {
   width: 95%;
   height: 150px;
   overflow: overlay;
-  padding: 5px; }
+  padding: 5px;
+  margin: 2%; }
 
-.trnsprntOverlay {
-  opacity: 0; }
+.port-item:hover {
+  background-color: rgba(50, 25, 52, 0.85);
+  box-shadow: 0px 0 20px #6e3772; }
 
 /**************************/
 /*         modal          */
@@ -674,6 +674,7 @@ svg {
   width: 55px; }
 
 img {
+  max-width: 50%;
   border: 1px solid #fefafe;
   box-shadow: 5px 5px 5px #000; }
 
@@ -695,7 +696,7 @@ img {
   padding: 15px; }
 
 .port-item img {
-  max-width: 75%;
+  width: 75%;
   display: block;
   margin: auto;
   margin-bottom: 25px; }
@@ -761,7 +762,9 @@ img {
     width: 21%; }
 
   .port-item {
-    width: 48%; }
+    width: 40%;
+    display: inline-block;
+    margin-left: 6%; }
 
   .port-item.modal {
     left: -32px;

@@ -22,11 +22,11 @@ fetch('js/portData.json')
         <span class="close">X</span>
         <h4>${projects[i].name}</h4>
           <img src="imgs/${projects[i].img}" alt="${projects[i].name}"/>
-          <aside>
+
             <p>
               ${projects[i].desc}
             </p>
-          </aside>
+
           <a href="${projects[i].url}">View Site</a>
           <a href="${projects[i].repo}">View Repo</a>
        </section>`;

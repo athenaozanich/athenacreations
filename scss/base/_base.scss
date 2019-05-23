@@ -42,17 +42,14 @@ section {
   background-color: hsla(297, 35%, 15%, 0.4);
   box-shadow: 5px 5px 11px #000;
   }
-section:hover{
-  background-color: hsla(297, 35%, 15%, 0.85);
-  box-shadow: 0px 0 20px #6e3772;
-}
 
 aside {
   width: 90%;
-  margin: auto;
+  margin: auto auto 5% auto;
   border-radius: 4px;
   background-color: hsla(297, 35%, 22%, 0.35);
   box-shadow: 5px 5px 5px #000;
+  padding:2%;
 }
 button {
   cursor: pointer;
@@ -73,6 +70,8 @@ footer{
 }
 .infoBox{
   margin-bottom: 15px;
-  text-align: center;}
+  text-align: center;
+  background-color: hsla(297, 35%, 15%, 1);}
+
 .top{
   margin-top: 130px;}
