@@ -510,11 +510,10 @@ p, h6 {
   text-align: center; }
 
 #myName {
-  font-size: 5rem;
+  font-size: 2rem;
   display: block; }
   @media (min-width: 1200px) {
     #myName {
-      font-size: 3rem;
       display: inline-block; } }
 
 a {
@@ -671,21 +670,21 @@ svg {
   fill: #00ffe6; }
 
 @media only screen and (min-width: 750px) {
-  /*.vert-wrapper section {
+  .vert-wrapper section {
     margin-top: 30px;
     width: 21%;
     min-height: 350px;
     display: inline-block;
     margin: 2%;
-    padding:1%;
-  }*/
+    padding: 1%; }
+
   .port-item a {
     width: 25%;
     margin-left: 11%;
     display: inline;
     font-size: medium; }
 
-  .profile {
+  .infoBox .profile {
     width: 10%;
     display: inline-block;
     margin: 0% 5%; }
@@ -694,32 +693,31 @@ svg {
     display: block;
     overflow: visible; }
 
-  /*.block-quote {
+  .block-quote {
     width: 25%;
     min-width: 200px;
     display: inline-block;
-    margin-left: 2.5%;
-  }
+    margin-left: 2.5%; }
+
   .block-quote p {
-    width: 183px;
-  }
+    width: 183px; }
+
   .block-quote h3 {
     text-align: left;
     width: 50px;
-    margin-left: 30px;
-  }
+    margin-left: 30px; }
+
   #availability .block-quote p {
-    width: 100%;
-  }
-  #bio{
+    width: 100%; }
+
+  #bio {
     display: inline-block;
     width: 60%;
-    vertical-align: top;
-  }*/ }
+    vertical-align: top; } }
 @media only screen and (min-width: 1200px) {
-  /*.vert-wrapper section {
-    width: 21%;
-  }*/
+  .vert-wrapper section {
+    width: 21%; }
+
   .port-item {
     width: 40%;
     display: inline-block;
@@ -729,17 +727,19 @@ svg {
     left: -32px;
     top: -30px; }
 
-  /*.calendar {
-    margin: 30px auto;
-  }
+  .calendar {
+    margin: 30px auto; }
+
   .calendar.desktop {
-    display: block;
-  }
+    display: block; }
+
   .calendar.tablet {
     display: none; }
-    #availability .block-quote p {
-      width: 500px; }
-    .block-quote {
-      margin-left: 7%;  }*/ }
+
+  #availability .block-quote p {
+    width: 500px; }
+
+  .block-quote {
+    margin-left: 7%; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -17,10 +17,9 @@ p, h6{
 }
 #myName{
   @extend %headlines;
-  font-size:5rem;
+  font-size:2rem;
   display: block;
   @include brk-pt-lg{
-    font-size:3rem;
     display: inline-block;
   }
 }
