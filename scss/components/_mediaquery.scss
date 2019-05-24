@@ -1,54 +1,56 @@
 
 @media only screen and (min-width:750px){
-  .vert-wrapper section {
+  /*.vert-wrapper section {
     margin-top: 30px;
     width: 21%;
     min-height: 350px;
     display: inline-block;
     margin: 2%;
     padding:1%;
-  }
+  }*/
   .port-item a{
     width:25%;
     margin-left: 11%;
     display: inline;
     font-size: medium;
   }
-  .infoBox img{
+  .profile{
     width: 10%;
     display: inline-block;
     margin: 0% 5%;
   }
   .port-item.modal {
     display: block;
-    overflow: visible; }
-    .hidden {
-      display: block; }
-      .mobile {
-        display: none; }
-        .block-quote {
-          width: 25%;
-          min-width: 200px;
-          display: inline-block;
-          margin-left: 2.5%; }
-        .block-quote p {
-          width: 183px; }
-        .block-quote h3 {
-          text-align: left;
-          width: 50px;
-          margin-left: 30px; }
-        #availability .block-quote p {
-            width: 100%; }
-            #bio{
-              display: inline-block;
-              width: 60%;
-              vertical-align: top;
-            }
-}
-@media only screen and (min-width:1200px){
-  .vert-wrapper section {
-    width: 21%;
+    overflow: visible;
   }
+  /*.block-quote {
+    width: 25%;
+    min-width: 200px;
+    display: inline-block;
+    margin-left: 2.5%;
+  }
+  .block-quote p {
+    width: 183px;
+  }
+  .block-quote h3 {
+    text-align: left;
+    width: 50px;
+    margin-left: 30px;
+  }
+  #availability .block-quote p {
+    width: 100%;
+  }
+  #bio{
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+  }*/
+}
+
+@media only screen and (min-width:1200px){
+  /*.vert-wrapper section {
+    width: 21%;
+  }*/
   .port-item {
       width: 40%;
       display: inline-block;
@@ -56,7 +58,7 @@
   .port-item.modal {
     left: -32px;
     top: -30px; }
-    .calendar {
+    /*.calendar {
       margin: 30px auto;
     }
     .calendar.desktop {
@@ -67,22 +69,5 @@
       #availability .block-quote p {
         width: 500px; }
       .block-quote {
-        margin-left: 7%;  }
-}
-@media only screen and (min-width:1250px){
-  header{
-    position: fixed;
-    top:0px;
-  }
-  nav {
-    float:right;
-    a {
-      width: 95px;
-      margin:5px;
-      height: 50px;
-      padding: 15px; }
-  }
-  #myName {
-    font-size:3rem;
-    display: inline-block;}
+        margin-left: 7%;  }*/
 }

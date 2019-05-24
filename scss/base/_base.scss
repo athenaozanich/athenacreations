@@ -13,7 +13,8 @@ header {
   border-bottom: 1px solid hsla(298, 37%, 40%, 0.75);
   background-color: hsla(297, 35%, 15%, 1);
   box-shadow: 10px 10px 10px #000;
-  position: relative;
+  position: fixed;
+  top:0px;
   }
 
 body {
@@ -25,12 +26,13 @@ body {
   background-repeat: no-repeat;
   background-attachment:fixed;
   background-color: #111;
+  padding-top: 2vh;
 }
 
 main {
   z-index: 1;
   position: relative;
-  width: 95%;
+  width: 100%;
   margin: 50px auto 0px auto;
   padding: 2.5%; }
 
@@ -55,6 +57,26 @@ button {
   cursor: pointer;
   display: block;
   margin: 20px auto;}
+
+.infoBox{
+  margin-bottom: 15px;
+  text-align: center;
+  background-color: hsla(297, 35%, 15%, 1);}
+
+.top{
+  margin-top: 3vh;}
+
+.port-item {
+  min-height:550px;
+  width: 98%;
+  display: inline-grid;
+  margin: 1%;
+}
+
+.mobile-hidden {
+  display: none;
+}
+
 footer{
   z-index: 2;
   width: 100%;
@@ -63,15 +85,12 @@ footer{
   content: "";
   display: table;
   clear: both;
-  h3{
-    float: left;
-    margin: 15px;
+  div {
+    width: 205px;
+    display: block;
+    margin: auto;
+  }
+  a{
+    display: inline-block;
   }
 }
-.infoBox{
-  margin-bottom: 15px;
-  text-align: center;
-  background-color: hsla(297, 35%, 15%, 1);}
-
-.top{
-  margin-top: 130px;}

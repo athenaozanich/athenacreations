@@ -1,5 +1,10 @@
-@mixin brk-pt{
+@mixin brk-pt-md{
     @media #{$brkpoint-md} {
+    	@content;
+    }
+}
+@mixin brk-pt-lg{
+    @media #{$brkpoint-lg} {
     	@content;
     }
 }

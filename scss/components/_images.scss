@@ -1,47 +1,38 @@
 /**************************/
 /*         IMAGES         */
 /**************************/
-
-
-/**************************/
-/*        Soc Med         */
-/**************************/
-svg {
-  display: block;
-  margin: auto;
-  width: 55px; }
 img{
   max-width: 50%;
   border: 1px solid hsla(302, 77%, 99%, 1);
   box-shadow: 5px 5px 5px #000;
 }
-.outer-shape {
-  opacity: 1;
-  fill: black; }
 
-.inner-shape {
-  opacity: 1;
-  fill: #00ffe6; }
-
-.port-item {
-  min-height:550px;
-  width: 98%;
-  display: inline-grid;
-  margin: 1%;}
-.port-item > .container{
-  padding:15px;}
-
-
-    .port-item img {
-      width: 75%;
-      display:block;
-      margin:auto;
-      margin-bottom: 25px;
-      }
+.port-item img {
+  width: 75%;
+  display:block;
+  margin:auto;
+  margin-bottom: 25px;
+}
 
 .container > img.profile{
   width: 15%;
   display: inline-block;
   margin-left:23.33%;
 
+}
+/**************************/
+/*        Soc Med         */
+/**************************/
+svg {
+  width: 55px;
+}
+
+.outer-shape {
+  opacity: 1;
+  fill: black;
+}
+
+.inner-shape {
+  opacity: 1;
+  fill: #00ffe6;
 }
