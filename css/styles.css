@@ -524,13 +524,14 @@ section p {
   text-shadow: 3px 3px 2.5px #000;
   color: #00dcbf; }
 
-#bio {
+.centered {
   display: block;
-  width: 95%;
-  margin: auto; }
+  width: 95%; }
 
-#bio p {
-  margin-top: 2%; }
+.centered p {
+  margin-top: 2%;
+  width: 35%;
+  display: inline-block; }
 
 aside p {
   min-height: 75px; }
@@ -722,7 +723,7 @@ img {
     font-size: medium; }
 
   .infoBox img {
-    width: 20%;
+    width: 10%;
     display: inline-block;
     margin: 0% 5%; }
 

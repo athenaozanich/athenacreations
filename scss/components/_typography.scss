@@ -56,16 +56,16 @@ section p {
     padding: 5px;
     text-shadow: 3px 3px 2.5px #000;
     color: #00dcbf;
-
 }
-#bio{
+.centered{
   display: block;
   width: 95%;
-  margin: auto;
 }
 
-#bio p{
-  margin-top:2%;
+.centered p{
+  margin-top: 2%;
+  width: 35%;
+  display: inline-block;
 }
 aside p {
   min-height: 75px;}
