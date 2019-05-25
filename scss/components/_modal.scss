@@ -5,9 +5,8 @@
   z-index: 1000;
   position: fixed;
   top: -23px;
-  left: -130px;
   width: 100vw;
-  height: 100vh;
+  height: 105vh;
   background-color: rgba(0, 0, 0, 0.87);
   overflow: hidden;
   cursor: default; }
@@ -33,4 +32,4 @@
 
 .port-item.modal a{
   width: 75%;
-  margin: auto;}
+  margin:-15px auto auto auto;}
