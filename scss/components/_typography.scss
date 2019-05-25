@@ -55,6 +55,9 @@ section p {
   margin-top: 2%;
   width: 100%;
   display: inline-block;
+  @include brk-pt-md{
+    width: 50%
+  }
 }
 aside p {
   min-height: 75px;}
