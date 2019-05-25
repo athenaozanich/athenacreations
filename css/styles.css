@@ -607,8 +607,9 @@ nav a {
   z-index: 1000;
   position: fixed;
   top: -23px;
+  left: -0px;
   width: 100vw;
-  height: 105vh;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.87);
   overflow: hidden;
   cursor: default; }
@@ -633,7 +634,7 @@ nav a {
 
 .port-item.modal a {
   width: 75%;
-  margin: -15px auto auto auto; }
+  margin: auto; }
 
 /**************************/
 /*         IMAGES         */
