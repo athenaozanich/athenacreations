@@ -71,6 +71,12 @@ button {
   width: 98%;
   display: inline-grid;
   margin: 1%;
+  @include brk-pt-md{
+    width: 47%;
+  }
+  @include brk-pt-lg{
+    width: 30%;
+  }
 }
 
 .mobile-hidden {

@@ -478,6 +478,12 @@ button {
   width: 98%;
   display: inline-grid;
   margin: 1%; }
+  @media (min-width: 769px) {
+    .port-item {
+      width: 47%; } }
+  @media (min-width: 1200px) {
+    .port-item {
+      width: 30%; } }
 
 .mobile-hidden {
   display: none; }
@@ -669,20 +675,6 @@ svg {
   fill: #00ffe6; }
 
 @media only screen and (min-width: 750px) {
-  .vert-wrapper section {
-    margin-top: 30px;
-    width: 21%;
-    min-height: 350px;
-    display: inline-block;
-    margin: 2%;
-    padding: 1%; }
-
-  .port-item a {
-    width: 25%;
-    margin-left: 11%;
-    display: inline;
-    font-size: medium; }
-
   .infoBox .profile {
     width: 10%;
     display: inline-block;
@@ -714,14 +706,6 @@ svg {
     width: 60%;
     vertical-align: top; } }
 @media only screen and (min-width: 1200px) {
-  .vert-wrapper section {
-    width: 21%; }
-
-  .port-item {
-    width: 40%;
-    display: inline-block;
-    margin-left: 6%; }
-
   .port-item.modal {
     left: -32px;
     top: -30px; }
