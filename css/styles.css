@@ -471,7 +471,7 @@ button {
   background-color: #321934; }
 
 .top {
-  margin-top: 3vh; }
+  margin-top: 25vh; }
 
 .port-item {
   min-height: 550px;
@@ -541,7 +541,7 @@ section p {
 
 .centered p {
   margin-top: 2%;
-  width: 35%;
+  width: 100%;
   display: inline-block; }
 
 aside p {
@@ -650,10 +650,8 @@ img {
   margin: auto;
   margin-bottom: 25px; }
 
-.container > img.profile {
-  width: 15%;
-  display: inline-block;
-  margin-left: 23.33%; }
+.container img.profile {
+  width: 30%; }
 
 /**************************/
 /*        Soc Med         */
