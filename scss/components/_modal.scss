@@ -6,7 +6,7 @@
   position: fixed;
   top: -23px;
   left: -10px;
-  width: 100vw;
+  width: 101vw;
   height: 105vh;
   background-color: rgba(0, 0, 0, 0.87);
   overflow: hidden;
@@ -15,7 +15,8 @@
 .port-item.modal img {
   display: block;
   width: 50%;
-  margin: auto; }
+  margin: auto;
+margin-bottom: -15px;}
 
 .port-item.modal h4 {
   display: inline-block;
@@ -31,8 +32,11 @@
 .port-item.modal .close {
   display: block; }
 
-.port-item.modal a{
+.modal a{
   width: 75%;
   margin: auto;
   margin-top:-15px;
+  @include brk-pt-md{
+    margin-top:5px;
+  }
 }
