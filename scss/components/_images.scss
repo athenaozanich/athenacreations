@@ -14,8 +14,13 @@ img{
   margin-bottom: 25px;
 }
 
-.container img.profile{
+.container .profile{
   width: 30%;
+  @include brk-pt-md{
+    width: 10%;
+    display: inline-block;
+    margin: 0% 5%;
+}
 
 }
 /**************************/

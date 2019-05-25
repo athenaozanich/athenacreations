@@ -483,7 +483,7 @@ button {
       width: 47%; } }
   @media (min-width: 1200px) {
     .port-item {
-      width: 30%; } }
+      width: 31.1%; } }
 
 .mobile-hidden {
   display: none; }
@@ -549,6 +549,9 @@ section p {
   margin-top: 2%;
   width: 100%;
   display: inline-block; }
+  @media (min-width: 769px) {
+    .centered p {
+      width: 50%; } }
 
 aside p {
   min-height: 75px; }
@@ -657,8 +660,13 @@ img {
   margin: auto;
   margin-bottom: 25px; }
 
-.container img.profile {
+.container .profile {
   width: 30%; }
+  @media (min-width: 769px) {
+    .container .profile {
+      width: 10%;
+      display: inline-block;
+      margin: 0% 5%; } }
 
 /**************************/
 /*        Soc Med         */
@@ -675,11 +683,6 @@ svg {
   fill: #00ffe6; }
 
 @media only screen and (min-width: 750px) {
-  .infoBox .profile {
-    width: 10%;
-    display: inline-block;
-    margin: 0% 5%; }
-
   .port-item.modal {
     display: block;
     overflow: visible; }
