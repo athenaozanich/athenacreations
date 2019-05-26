@@ -15,7 +15,7 @@ img{
 }
 .profile{
   width: 30%;
-  @include brk-pt-md{
+  @include brk-pt-lg{
     width: 10%;
     display: inline-block;
     float: right;

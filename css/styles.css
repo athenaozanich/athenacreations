@@ -427,13 +427,21 @@ header {
   display: table;
   clear: both; }
   header nav {
-    margin-top: 100px; }
-  @media (min-width: 1200px) {
-    header p {
-      width: 31%;
-      font-size: 1.25rem;
-      margin-right: 25%;
-      float: right; } }
+    margin-top: 50px; }
+    @media (min-width: 769px) {
+      header nav {
+        margin-top: 100px; } }
+  header p {
+    text-align: justify;
+    font-size: 1.25rem;
+    word-spacing: 0.05rem; }
+    @media (min-width: 769px) {
+      header p {
+        margin-right: 5%;
+        width: 45%;
+        float: right; }
+        header p.mobile-hidden {
+          display: inline-block; } }
 
 body {
   font-family: "Raleway", "Georgia", "serif";
@@ -539,7 +547,7 @@ nav a:hover, .active {
   text-shadow: 0px 0px 20px #f461ff; }
 
 section p {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   width: 95%;
   margin: auto;
   padding: 5px;
@@ -591,7 +599,7 @@ nav a {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: black;
+  background: #ff00aa;
   -webkit-box-shadow: inset 0 0 6px black; }
 
 ::-webkit-scrollbar-track:hover {
@@ -619,8 +627,8 @@ nav a {
 .port-item.modal {
   z-index: 1000;
   position: fixed;
-  top: -23px;
-  left: -10px;
+  top: -30px;
+  left: -15px;
   width: 101vw;
   height: 105vh;
   background-color: rgba(0, 0, 0, 0.87);
@@ -670,7 +678,7 @@ img {
 
 .profile {
   width: 30%; }
-  @media (min-width: 769px) {
+  @media (min-width: 1200px) {
     .profile {
       width: 10%;
       display: inline-block;

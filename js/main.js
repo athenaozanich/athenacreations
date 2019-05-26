@@ -5,7 +5,7 @@ let projectCard;
 let parsedProjectCard;
 let modal;
 //get data from db
-fetch('js/portData.json')
+fetch('./js/portData.json')
   .then(function(response) {
     return response.json();
   })

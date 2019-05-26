@@ -17,15 +17,29 @@ header {
   display: table;
   clear: both;
   nav{
-    margin-top: 100px
+    margin-top: 50px;
+    @include brk-pt-md{
+      margin-top: 100px;
+    }
+
   }
   p{
-    @include brk-pt-lg{
-    width:31%;
+    text-align: justify;
     font-size: 1.25rem;
-    margin-right: 25%;
-    float:right;
+    word-spacing: 0.05rem;
+    @include brk-pt-md{
+      &.mobile-hidden{
+        display:inline-block;
+      }
+      margin-right: 5%;
+      width: 45%;
+      float:right;
     }
+
+    @include brk-pt-lg{
+
+    }
+
   }
 }
 
