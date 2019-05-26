@@ -9,13 +9,25 @@
 header {
   z-index: 2;
   width: 100%;
-  padding: 15px 5%;
+  padding: 2px;
   border-bottom: 1px solid hsla(298, 37%, 40%, 0.75);
   background-color: hsla(297, 35%, 15%, 1);
   box-shadow: 10px 10px 10px #000;
-  position: fixed;
-  top:0px;
+  content: "";
+  display: table;
+  clear: both;
+  nav{
+    margin-top: 100px
   }
+  p{
+    @include brk-pt-lg{
+    width:31%;
+    font-size: 1.25rem;
+    margin-right: 25%;
+    float:right;
+    }
+  }
+}
 
 body {
   font-family: "Raleway", "Georgia", "serif";
@@ -26,7 +38,6 @@ body {
   background-repeat: no-repeat;
   background-attachment:fixed;
   background-color: #111;
-  padding-top: 2vh;
 }
 
 main {
@@ -39,19 +50,17 @@ main {
 section {
   margin: auto;
   margin-top: 30px;
-  width: 96%;
+  width: 98%;
   border-radius: 5px;
   background-color: hsla(297, 35%, 15%, 0.4);
   box-shadow: 5px 5px 11px #000;
   }
 
 aside {
-  width: 90%;
-  margin: auto auto 5% auto;
-  border-radius: 4px;
-  background-color: hsla(297, 35%, 22%, 0.35);
-  box-shadow: 5px 5px 5px #000;
-  padding:2%;
+  float: left;
+  content: "";
+  display: table;
+  clear: both;
 }
 button {
   cursor: pointer;
@@ -68,14 +77,16 @@ button {
 
 .port-item {
   min-height:550px;
-  width: 98%;
+  width: 94%;
   display: inline-grid;
-  margin: 1%;
+  margin-left: 3%;
   @include brk-pt-md{
     width: 47%;
+    margin-left: 1.8%;
   }
   @include brk-pt-lg{
-    width: 31.1%;
+    width: 23.5%;
+    margin-left: 1.2%;
   }
 }
 

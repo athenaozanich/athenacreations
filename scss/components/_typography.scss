@@ -20,7 +20,6 @@ p, h6{
   font-size:2rem;
   display: block;
   @include brk-pt-lg{
-    display: inline-block;
   }
 }
 
@@ -45,10 +44,6 @@ section p {
     padding: 5px;
     text-shadow: 3px 3px 2.5px #000;
     color: #00dcbf;
-}
-.centered{
-  display: block;
-  width: 95%;
 }
 
 .centered p{

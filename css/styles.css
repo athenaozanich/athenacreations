@@ -419,12 +419,21 @@ template {
 header {
   z-index: 2;
   width: 100%;
-  padding: 15px 5%;
+  padding: 2px;
   border-bottom: 1px solid rgba(137, 64, 140, 0.75);
   background-color: #321934;
   box-shadow: 10px 10px 10px #000;
-  position: fixed;
-  top: 0px; }
+  content: "";
+  display: table;
+  clear: both; }
+  header nav {
+    margin-top: 100px; }
+  @media (min-width: 1200px) {
+    header p {
+      width: 31%;
+      font-size: 1.25rem;
+      margin-right: 25%;
+      float: right; } }
 
 body {
   font-family: "Raleway", "Georgia", "serif";
@@ -434,8 +443,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: #111;
-  padding-top: 2vh; }
+  background-color: #111; }
 
 main {
   z-index: 1;
@@ -447,18 +455,16 @@ main {
 section {
   margin: auto;
   margin-top: 30px;
-  width: 96%;
+  width: 98%;
   border-radius: 5px;
   background-color: rgba(50, 25, 52, 0.4);
   box-shadow: 5px 5px 11px #000; }
 
 aside {
-  width: 90%;
-  margin: auto auto 5% auto;
-  border-radius: 4px;
-  background-color: rgba(74, 36, 76, 0.35);
-  box-shadow: 5px 5px 5px #000;
-  padding: 2%; }
+  float: left;
+  content: "";
+  display: table;
+  clear: both; }
 
 button {
   cursor: pointer;
@@ -475,15 +481,17 @@ button {
 
 .port-item {
   min-height: 550px;
-  width: 98%;
+  width: 94%;
   display: inline-grid;
-  margin: 1%; }
+  margin-left: 3%; }
   @media (min-width: 769px) {
     .port-item {
-      width: 47%; } }
+      width: 47%;
+      margin-left: 1.8%; } }
   @media (min-width: 1200px) {
     .port-item {
-      width: 31.1%; } }
+      width: 23.5%;
+      margin-left: 1.2%; } }
 
 .mobile-hidden {
   display: none; }
@@ -518,9 +526,6 @@ p, h6 {
 #myName {
   font-size: 2rem;
   display: block; }
-  @media (min-width: 1200px) {
-    #myName {
-      display: inline-block; } }
 
 a {
   font-size: 1.5rem;
@@ -540,10 +545,6 @@ section p {
   padding: 5px;
   text-shadow: 3px 3px 2.5px #000;
   color: #00dcbf; }
-
-.centered {
-  display: block;
-  width: 95%; }
 
 .centered p {
   margin-top: 2%;
@@ -609,6 +610,9 @@ nav a {
 .calendar {
   margin: auto; }
 
+.vert-wrapper {
+  width: 100%; }
+
 /**************************/
 /*         modal          */
 /**************************/
@@ -664,13 +668,14 @@ img {
   margin: auto;
   margin-bottom: 25px; }
 
-.container .profile {
+.profile {
   width: 30%; }
   @media (min-width: 769px) {
-    .container .profile {
+    .profile {
       width: 10%;
       display: inline-block;
-      margin: 0% 5%; } }
+      float: right;
+      margin: 0% 0%; } }
 
 /**************************/
 /*        Soc Med         */
