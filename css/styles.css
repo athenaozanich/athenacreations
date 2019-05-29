@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, #myName, a {
   text-align: center;
   text-decoration: none;
   letter-spacing: 2px;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   margin: 5px;
   color: #ff00aa;
   text-transform: capitalize;
@@ -426,19 +426,15 @@ header {
   content: "";
   display: table;
   clear: both; }
-  header nav {
-    margin-top: 50px; }
-    @media (min-width: 769px) {
-      header nav {
-        margin-top: 100px; } }
   header p {
-    text-align: justify;
+    text-indent: 20px;
+    text-align: left;
     font-size: 1.25rem;
     word-spacing: 0.05rem; }
     @media (min-width: 769px) {
       header p {
         margin-right: 5%;
-        width: 45%;
+        width: 450px;
         float: right; }
         header p.mobile-hidden {
           display: inline-block; } }
@@ -451,7 +447,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: #111; }
+  background-color: #111;
+  background-blend-mode: difference; }
 
 main {
   z-index: 1;
@@ -460,19 +457,26 @@ main {
   margin: 50px auto 0px auto;
   padding: 2.5%; }
 
-section {
-  margin: auto;
-  margin-top: 30px;
-  width: 98%;
+aside {
   border-radius: 5px;
-  background-color: rgba(50, 25, 52, 0.4);
+  background-color: rgba(44, 22, 45, 0.8);
+  margin-bottom: 15px; }
+
+aside:hover {
+  background-color: #432145;
   box-shadow: 5px 5px 11px #000; }
 
-aside {
-  float: left;
-  content: "";
-  display: table;
-  clear: both; }
+.header-left {
+  display: block;
+  margin: auto;
+  float: initial;
+  box-shadow: none; }
+  @media (min-width: 769px) {
+    .header-left {
+      float: left;
+      content: "";
+      display: table;
+      clear: both; } }
 
 button {
   cursor: pointer;
@@ -480,15 +484,17 @@ button {
   margin: 20px auto; }
 
 .infoBox {
-  margin-bottom: 15px;
+  border-radius: 5px;
+  margin: 30px auto 15px auto;
+  width: 98%;
   text-align: center;
-  background-color: #321934; }
+  background-color: #321934;
+  box-shadow: 2px 2px 0px rgba(137, 64, 140, 0.75); }
 
 .top {
   margin-top: 25vh; }
 
 .port-item {
-  min-height: 550px;
   width: 94%;
   display: inline-grid;
   margin-left: 3%; }
@@ -500,9 +506,6 @@ button {
     .port-item {
       width: 23.5%;
       margin-left: 1.2%; } }
-
-.mobile-hidden {
-  display: none; }
 
 footer {
   z-index: 2;
@@ -524,7 +527,7 @@ footer {
 /**************************/
 p, h6 {
   text-transform: none;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   letter-spacing: 0.5px;
   font-family: "Orbitron", "Courier New", "monospace", "sans-serif";
   color: #00ffe6;
@@ -574,14 +577,15 @@ span, .port-item a {
   width: 95%;
   height: 100px;
   overflow: overlay;
-  padding: 5px;
-  margin: 2%; }
+  padding: 10px;
+  margin: 2%;
+  background-color: #321934;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 10px black; }
 
 nav a {
-  width: 95px;
-  margin: 5px;
   height: 50px;
-  padding: 15px; }
+  padding: 10px; }
 
 /**************************/
 /*        Reusables       */
@@ -620,6 +624,16 @@ nav a {
 
 .vert-wrapper {
   width: 100%; }
+
+.mobile-hidden {
+  display: none; }
+
+.horizontal {
+  width: 94%; }
+  @media (min-width: 769px) {
+    .horizontal {
+      width: 48%;
+      margin-left: 1.25%; } }
 
 /**************************/
 /*         modal          */
@@ -677,10 +691,12 @@ img {
   margin-bottom: 25px; }
 
 .profile {
-  width: 30%; }
+  width: 10%; }
+  @media (min-width: 769px) {
+    .profile.mobile-hidden {
+      display: none; } }
   @media (min-width: 1200px) {
-    .profile {
-      width: 10%;
+    .profile.mobile-hidden {
       display: inline-block;
       float: right;
       margin: 0% 0%; } }

@@ -18,7 +18,7 @@ fetch('./js/portData.json')
     for (var i = 0; i < projects.length; i++) {
       //create variable for project card
      projectCard =
-      `<section class="port-item card__${i}">
+      `<aside class="port-item card__${i}">
         <span class="close">X</span>
         <h4>${projects[i].name}</h4>
           <img src="imgs/${projects[i].img}" alt="${projects[i].name}"/>
@@ -29,7 +29,7 @@ fetch('./js/portData.json')
 
           <a href="${projects[i].url}">View Site</a>
           <a href="${projects[i].repo}">View Repo</a>
-       </section>`;
+       </aside>`;
     //parse string into html
     parsedProjectCard = $.parseHTML(projectCard);
     projectCards.push(parsedProjectCard[0]);

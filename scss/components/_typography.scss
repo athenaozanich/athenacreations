@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5{
 
 p, h6{
   text-transform: none;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   letter-spacing: 0.5px;
   font-family: "Orbitron", "Courier New", "monospace", "sans-serif";
   color: hsla(174, 100%, 50%, 1);
@@ -65,12 +65,13 @@ span, .port-item a {
     width: 95%;
     height: 100px;
     overflow: overlay;
-    padding: 5px;
+    padding: 10px;
     margin: 2%;
+    background-color: hsla(297, 35%, 15%, 1);
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 10px black
   }
 nav a {
-    width: 95px;
-    margin:5px;
     height: 50px;
-    padding: 15px;
+    padding: 10px;
 }

@@ -14,12 +14,18 @@ img{
   margin-bottom: 25px;
 }
 .profile{
-  width: 30%;
+  width: 10%;
+  @include brk-pt-md{
+    &.mobile-hidden{
+      display:none;
+    }
+  }
   @include brk-pt-lg{
-    width: 10%;
-    display: inline-block;
-    float: right;
-    margin: 0% 0%;
+    &.mobile-hidden{
+      display: inline-block;
+      float: right;
+      margin: 0% 0%;
+    }
 }
 
 }

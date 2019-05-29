@@ -38,3 +38,14 @@
 .vert-wrapper{
   width:100%;
 }
+
+.mobile-hidden {
+  display: none;
+}
+.horizontal{
+  width:94%;
+  @include brk-pt-md{
+    width:48%;
+    margin-left:1.25%;
+  }
+}

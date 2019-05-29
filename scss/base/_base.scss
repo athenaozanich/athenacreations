@@ -16,15 +16,10 @@ header {
   content: "";
   display: table;
   clear: both;
-  nav{
-    margin-top: 50px;
-    @include brk-pt-md{
-      margin-top: 100px;
-    }
 
-  }
   p{
-    text-align: justify;
+    text-indent: 20px;
+    text-align: left;
     font-size: 1.25rem;
     word-spacing: 0.05rem;
     @include brk-pt-md{
@@ -32,7 +27,7 @@ header {
         display:inline-block;
       }
       margin-right: 5%;
-      width: 45%;
+      width: 450px;
       float:right;
     }
 
@@ -52,6 +47,7 @@ body {
   background-repeat: no-repeat;
   background-attachment:fixed;
   background-color: #111;
+  background-blend-mode: difference;
 }
 
 main {
@@ -61,20 +57,27 @@ main {
   margin: 50px auto 0px auto;
   padding: 2.5%; }
 
-section {
-  margin: auto;
-  margin-top: 30px;
-  width: 98%;
+ aside {
   border-radius: 5px;
-  background-color: hsla(297, 35%, 15%, 0.4);
+  background-color: hsla(297, 35%, 13%, 0.8);
+  margin-bottom: 15px;
+  }
+aside:hover{
+  background-color: hsla(297, 35%, 20%, 1.0);
   box-shadow: 5px 5px 11px #000;
+}
+.header-left {
+  display: block;
+  margin: auto;
+  float: initial;
+  box-shadow: none;
+  @include brk-pt-md{
+    float: left;
+    content: "";
+    display: table;
+    clear: both;
   }
 
-aside {
-  float: left;
-  content: "";
-  display: table;
-  clear: both;
 }
 button {
   cursor: pointer;
@@ -82,15 +85,18 @@ button {
   margin: 20px auto;}
 
 .infoBox{
-  margin-bottom: 15px;
+  border-radius: 5px;
+  margin: 30px auto 15px auto;
+  width: 98%;
   text-align: center;
-  background-color: hsla(297, 35%, 15%, 1);}
+  background-color: hsla(297, 35%, 15%, 1);
+  box-shadow: 2px 2px 0px hsla(298, 37%, 40%, 0.75);
+}
 
 .top{
   margin-top: 25vh;}
 
 .port-item {
-  min-height:550px;
   width: 94%;
   display: inline-grid;
   margin-left: 3%;
@@ -104,9 +110,6 @@ button {
   }
 }
 
-.mobile-hidden {
-  display: none;
-}
 
 footer{
   z-index: 2;
