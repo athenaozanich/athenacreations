@@ -420,8 +420,8 @@ header {
   z-index: 2;
   width: 100%;
   padding: 2px;
-  border-bottom: 1px solid rgba(137, 64, 140, 0.75);
-  background-color: #321934;
+  border-bottom: 1px solid #403925;
+  background-color: #311833;
   box-shadow: 10px 10px 10px #000;
   content: "";
   display: table;
@@ -441,7 +441,6 @@ header {
 
 body {
   font-family: "Raleway", "Georgia", "serif";
-  color: white;
   text-shadow: 2px 2px 5px black;
   background-image: url("../imgs/planet-mountains.jpg");
   background-size: cover;
@@ -460,11 +459,13 @@ main {
 aside {
   border-radius: 5px;
   background-color: rgba(44, 22, 45, 0.8);
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  border: 1px solid #403925; }
 
 aside:hover {
+  border: 1px solid #beb28e;
   background-color: #432145;
-  box-shadow: 5px 5px 11px #000; }
+  box-shadow: 5px 5px 11px #403925; }
 
 .header-left {
   display: block;
@@ -485,32 +486,33 @@ button {
 
 .infoBox {
   border-radius: 5px;
-  margin: 30px auto 15px auto;
+  margin: 75px auto 75px auto;
   width: 98%;
   text-align: center;
   background-color: #321934;
-  box-shadow: 2px 2px 0px rgba(137, 64, 140, 0.75); }
+  border: 1px solid #403925; }
 
 .top {
   margin-top: 25vh; }
 
 .port-item {
-  width: 94%;
+  width: 91%;
   display: inline-grid;
-  margin-left: 3%; }
+  margin-left: 4.5%;
+  border: 1px solid #403925; }
   @media (min-width: 769px) {
     .port-item {
-      width: 47%;
-      margin-left: 1.8%; } }
+      width: 43%;
+      margin-left: 4.8%; } }
   @media (min-width: 1200px) {
     .port-item {
-      width: 23.5%;
-      margin-left: 1.2%; } }
+      width: 28.3%;
+      margin-left: 3.7%; } }
 
 footer {
   z-index: 2;
   width: 100%;
-  border-top: 1px solid rgba(137, 64, 140, 0.75);
+  border-top: 1px solid #403925;
   background-color: #301831;
   content: "";
   display: table;
@@ -542,7 +544,7 @@ a {
   font-size: 1.5rem;
   letter-spacing: 0.5px;
   font-family: "Orbitron", "Courier New", "monospace", "sans-serif";
-  color: #00ffe6; }
+  color: #beb28e; }
 
 nav a:hover, .active {
   border-radius: 5px;
@@ -569,14 +571,14 @@ aside p {
   min-height: 75px; }
 
 span, .port-item a {
-  color: #fefafe;
+  color: #beb28e;
   font-style: italic;
   text-align: center; }
 
 .port-item p {
   width: 95%;
   height: 100px;
-  overflow: overlay;
+  overflow: hidden;
   padding: 10px;
   margin: 2%;
   background-color: #321934;
@@ -603,7 +605,7 @@ nav a {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: #ff00aa;
+  background: #ab9b6d;
   -webkit-box-shadow: inset 0 0 6px black; }
 
 ::-webkit-scrollbar-track:hover {
@@ -681,7 +683,7 @@ nav a {
 /**************************/
 img {
   max-width: 50%;
-  border: 1px solid #fefafe;
+  border: 1px solid #403925;
   box-shadow: 5px 5px 5px #000; }
 
 .port-item img {
@@ -691,15 +693,15 @@ img {
   margin-bottom: 25px; }
 
 .profile {
-  width: 10%; }
+  width: 10%;
+  margin: 1% 1%; }
   @media (min-width: 769px) {
     .profile.mobile-hidden {
       display: none; } }
   @media (min-width: 1200px) {
     .profile.mobile-hidden {
       display: inline-block;
-      float: right;
-      margin: 0% 0%; } }
+      float: right; } }
 
 /**************************/
 /*        Soc Med         */

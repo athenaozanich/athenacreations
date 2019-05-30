@@ -28,7 +28,7 @@ a{
   font-size: 1.5rem;
   letter-spacing: 0.5px;
   font-family: "Orbitron", "Courier New", "monospace", "sans-serif";
-  color: hsla(174, 100%, 50%, 1);
+  color: #beb28e;
 }
 
 nav a:hover, .active {
@@ -55,21 +55,22 @@ section p {
   }
 }
 aside p {
-  min-height: 75px;}
+  min-height: 75px;
+}
 
 span, .port-item a {
-  color: hsla(302, 77%, 99%, 1);
+  color: #beb28e;
   font-style: italic;
   text-align:center;}
   .port-item p{
     width: 95%;
     height: 100px;
-    overflow: overlay;
+    overflow: hidden;
     padding: 10px;
     margin: 2%;
     background-color: hsla(297, 35%, 15%, 1);
     border-radius: 5px;
-    box-shadow: inset 0px 0px 10px black
+    box-shadow: inset 0px 0px 10px black;
   }
 nav a {
     height: 50px;

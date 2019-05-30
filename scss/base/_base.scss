@@ -10,8 +10,8 @@ header {
   z-index: 2;
   width: 100%;
   padding: 2px;
-  border-bottom: 1px solid hsla(298, 37%, 40%, 0.75);
-  background-color: hsla(297, 35%, 15%, 1);
+  border-bottom: 1px solid #403925;
+  background-color: #311833;
   box-shadow: 10px 10px 10px #000;
   content: "";
   display: table;
@@ -40,7 +40,6 @@ header {
 
 body {
   font-family: "Raleway", "Georgia", "serif";
-  color: white;
   text-shadow: 2px 2px 5px black;
   background-image: url("../imgs/planet-mountains.jpg");
   background-size:cover;
@@ -61,10 +60,12 @@ main {
   border-radius: 5px;
   background-color: hsla(297, 35%, 13%, 0.8);
   margin-bottom: 15px;
+  border: 1px solid #403925;
   }
 aside:hover{
+  border: 1px solid #beb28e;
   background-color: hsla(297, 35%, 20%, 1.0);
-  box-shadow: 5px 5px 11px #000;
+  box-shadow: 5px 5px 11px #403925;
 }
 .header-left {
   display: block;
@@ -86,27 +87,28 @@ button {
 
 .infoBox{
   border-radius: 5px;
-  margin: 30px auto 15px auto;
+  margin: 75px auto 75px auto;
   width: 98%;
   text-align: center;
   background-color: hsla(297, 35%, 15%, 1);
-  box-shadow: 2px 2px 0px hsla(298, 37%, 40%, 0.75);
+  border: 1px solid #403925;
 }
 
 .top{
   margin-top: 25vh;}
 
 .port-item {
-  width: 94%;
+  width: 91%;
   display: inline-grid;
-  margin-left: 3%;
+  margin-left: 4.5%;
+  border: 1px solid #403925;
   @include brk-pt-md{
-    width: 47%;
-    margin-left: 1.8%;
+    width: 43%;
+    margin-left: 4.8%;
   }
   @include brk-pt-lg{
-    width: 23.5%;
-    margin-left: 1.2%;
+    width: 28.3%;
+    margin-left: 3.7%;
   }
 }
 
@@ -114,7 +116,7 @@ button {
 footer{
   z-index: 2;
   width: 100%;
-  border-top: 1px solid hsla(298, 37%, 40%, 0.75);
+  border-top: 1px solid #403925;
   background-color: #301831;
   content: "";
   display: table;
