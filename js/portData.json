@@ -65,6 +65,17 @@
                      [
 
                      ]
+             },
+             {
+             "name"   :"Random Quotes",
+             "url"    :"https://athenaozanich.github.io/random-quote-generator/",
+             "repo"   :"https://github.com/athenaozanich/random-quote-generator",
+             "img"    :"randQuoteGen.png",
+             "desc"   :"A fun random quote generator built utilizing pure javascript, html and css. Randomly create a new hex color for background and selects a quote from an array and adds it to the dom after a few seconds.",
+             "Skills" :
+                     [
+
+                     ]
              }
             ]
 }

@@ -22,7 +22,7 @@ fetch('./js/portData.json')
         <span class="close">X</span>
         <h4>${projects[i].name}</h4>
           <img src="imgs/${projects[i].img}" alt="${projects[i].name}"/>
-
+          <span>Click to read more</span>
             <p>
               ${projects[i].desc}
             </p>
