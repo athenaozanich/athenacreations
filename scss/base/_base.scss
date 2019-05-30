@@ -3,6 +3,7 @@
   font-variant-ligatures: no-common-ligatures;
   transition: all 0.85s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   box-sizing: border-box;
+  vertical-align: baseline;
 }
 
 /*content containers*/
@@ -97,7 +98,7 @@ button {
 
 .port-item {
   width: 91%;
-  display: inline-grid;
+  display: inline-block;
   margin-left: 4.5%;
   border: 1px solid #403925;
   @include brk-pt-md{

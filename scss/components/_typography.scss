@@ -59,18 +59,19 @@ aside p {
 }
 
 span, .port-item a {
-  color: #beb28e;
+  color: #00dcbf;
   font-style: italic;
   text-align:center;}
-  .port-item p{
-    width: 95%;
-    height: 100px;
-    overflow: hidden;
-    padding: 10px;
-    margin: 2%;
-    background-color: hsla(297, 35%, 15%, 1);
-    border-radius: 5px;
-    box-shadow: inset 0px 0px 10px black;
+  .vert-wrapper .port-item p{
+    display: none;
+  }
+  .vert-wrapper .port-item a{
+    color: #beb28e;
+    width:40%;
+    display:inline-block;
+  }
+  .port-item span{
+    display: block;
   }
 nav a {
     height: 50px;

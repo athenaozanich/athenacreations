@@ -24,7 +24,14 @@ margin-bottom: -15px;}
   margin: 30px auto 0px auto;
   text-align: center; }
 
-
+.port-item.modal p{
+  display: block;
+  overflow: hidden;
+  padding: 10px;
+  margin: 2%;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 10px black;
+}
 .port-item.modal .container {
   margin: 0px auto;
   width: 40%; }

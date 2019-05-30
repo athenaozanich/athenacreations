@@ -413,7 +413,8 @@ template {
 * {
   font-variant-ligatures: no-common-ligatures;
   transition: all 0.85s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  vertical-align: baseline; }
 
 /*content containers*/
 header {
@@ -495,7 +496,7 @@ button {
 
 .port-item {
   width: 91%;
-  display: inline-grid;
+  display: inline-block;
   margin-left: 4.5%;
   border: 1px solid #403925; }
   @media (min-width: 769px) {
@@ -569,19 +570,20 @@ aside p {
   min-height: 75px; }
 
 span, .port-item a {
-  color: #beb28e;
+  color: #00dcbf;
   font-style: italic;
   text-align: center; }
 
-.port-item p {
-  width: 95%;
-  height: 100px;
-  overflow: hidden;
-  padding: 10px;
-  margin: 2%;
-  background-color: #321934;
-  border-radius: 5px;
-  box-shadow: inset 0px 0px 10px black; }
+.vert-wrapper .port-item p {
+  display: none; }
+
+.vert-wrapper .port-item a {
+  color: #beb28e;
+  width: 40%;
+  display: inline-block; }
+
+.port-item span {
+  display: block; }
 
 nav a {
   height: 50px;
@@ -660,6 +662,14 @@ nav a {
   width: 65%;
   margin: 30px auto 0px auto;
   text-align: center; }
+
+.port-item.modal p {
+  display: block;
+  overflow: hidden;
+  padding: 10px;
+  margin: 2%;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 10px black; }
 
 .port-item.modal .container {
   margin: 0px auto;
