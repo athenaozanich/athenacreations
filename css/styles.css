@@ -442,12 +442,10 @@ header {
 body {
   font-family: "Raleway", "Georgia", "serif";
   text-shadow: 2px 2px 5px black;
-  background-image: url("../imgs/planet-mountains.jpg");
+  background-image: linear-gradient(to right bottom, rgba(81, 67, 36, 0.7), rgba(5, 97, 90, 0.7)), url(../imgs/planet-mountains.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-color: #111;
-  background-blend-mode: difference; }
+  background-attachment: fixed; }
 
 main {
   z-index: 1;
