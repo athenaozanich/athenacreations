@@ -572,17 +572,22 @@ aside p {
 span, .port-item a {
   color: #00dcbf;
   font-style: italic;
-  text-align: center; }
+  text-align: center;
+  display: block; }
 
 .vert-wrapper .port-item p {
   display: none; }
 
+.horizontal p {
+  max-height: 75px;
+  overflow-y: scroll; }
+
 .vert-wrapper .port-item a {
   color: #beb28e;
-  width: 40%;
+  width: 47%;
   display: inline-block; }
 
-.port-item span {
+.other-work span {
   display: block; }
 
 nav a {
@@ -634,8 +639,8 @@ nav a {
   width: 94%; }
   @media (min-width: 769px) {
     .horizontal {
-      width: 48%;
-      margin-left: 1.25%; } }
+      width: 44%;
+      margin-left: 3.7%; } }
 
 /**************************/
 /*         modal          */
