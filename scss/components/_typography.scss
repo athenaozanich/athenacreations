@@ -9,7 +9,6 @@ h1, h2, h3, h4, h5{
 p, h6{
   text-transform: none;
   font-size: 1.25rem;
-  letter-spacing: 0.5px;
   font-family: "Orbitron", "Courier New", "monospace", "sans-serif";
   color: hsla(174, 100%, 50%, 1);
   font-weight: lighter;
@@ -26,7 +25,6 @@ p, h6{
 a{
   @extend %headlines;
   font-size: 1.5rem;
-  letter-spacing: 0.5px;
   font-family: "Orbitron", "Courier New", "monospace", "sans-serif";
   color: #beb28e;
 }
@@ -68,12 +66,11 @@ span, .port-item a {
     display: none;
   }
   .horizontal p{
-    max-height: 75px;
-    overflow-y:scroll;
+    padding:2%;
   }
   .vert-wrapper .port-item a{
     color: #beb28e;
-    width:45%; 
+    width:45%;
     display:inline-block;
   }
   .other-work span{

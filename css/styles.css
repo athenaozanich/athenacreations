@@ -430,7 +430,6 @@ header {
   header p {
     text-indent: 20px;
     text-align: left;
-    font-size: 1.25rem;
     word-spacing: 0.05rem; }
     @media (min-width: 769px) {
       header p {
@@ -530,7 +529,6 @@ footer {
 p, h6 {
   text-transform: none;
   font-size: 1.25rem;
-  letter-spacing: 0.5px;
   font-family: "Orbitron", "Courier New", "monospace", "sans-serif";
   color: #00ffe6;
   font-weight: lighter;
@@ -542,7 +540,6 @@ p, h6 {
 
 a {
   font-size: 1.5rem;
-  letter-spacing: 0.5px;
   font-family: "Orbitron", "Courier New", "monospace", "sans-serif";
   color: #beb28e; }
 
@@ -580,8 +577,7 @@ span, .port-item a {
   display: none; }
 
 .horizontal p {
-  max-height: 75px;
-  overflow-y: scroll; }
+  padding: 2%; }
 
 .vert-wrapper .port-item a {
   color: #beb28e;
@@ -638,7 +634,9 @@ nav a {
   display: none; }
 
 .horizontal {
-  width: 94%; }
+  width: 94%;
+  overflow-y: scroll;
+  max-height: 300px; }
   @media (min-width: 769px) {
     .horizontal {
       width: 44%;

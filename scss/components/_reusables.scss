@@ -45,6 +45,8 @@
 }
 .horizontal{
   width:94%;
+  overflow-y:scroll;
+  max-height:300px;
   @include brk-pt-md{
 
     width: 44%;

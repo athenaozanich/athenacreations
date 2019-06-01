@@ -21,7 +21,6 @@ header {
   p{
     text-indent: 20px;
     text-align: left;
-    font-size: 1.25rem;
     word-spacing: 0.05rem;
     @include brk-pt-md{
       &.mobile-hidden{
