@@ -41,7 +41,7 @@ header {
 body {
   font-family: "Raleway", "Georgia", "serif";
   text-shadow: 2px 2px 5px black;
-  background-image: linear-gradient(to right bottom, hsla(41, 38%, 23%, 0.7), hsla(175, 91%, 20%, 0.7)), url(../imgs/planet-mountains.jpg);
+  background-image: radial-gradient(at top left, rgba(81, 67, 36, 0.75) 40%, rgba(5, 97, 90, 0.7)), url(../imgs/planet-mountains.jpg);
   background-size:cover;
   background-repeat: no-repeat;
   background-attachment:fixed;

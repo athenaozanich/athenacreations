@@ -442,7 +442,7 @@ header {
 body {
   font-family: "Raleway", "Georgia", "serif";
   text-shadow: 2px 2px 5px black;
-  background-image: linear-gradient(to right bottom, rgba(81, 67, 36, 0.7), rgba(5, 97, 90, 0.7)), url(../imgs/planet-mountains.jpg);
+  background-image: radial-gradient(at top left, rgba(81, 67, 36, 0.75) 40%, rgba(5, 97, 90, 0.7)), url(../imgs/planet-mountains.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; }
@@ -639,7 +639,7 @@ nav a {
   max-height: 300px; }
   @media (min-width: 769px) {
     .horizontal {
-      width: 44%;
+      width: 92%;
       margin-left: 3.7%; } }
 
 /**************************/
