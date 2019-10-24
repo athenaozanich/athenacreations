@@ -1,0 +1,10 @@
+@mixin brk-pt($screen-size){
+    @media #{$screen-size} {
+    	@content;
+    }
+}
+@mixin brk-pt-lg{
+    @media #{$brkpoint-lg} {
+    	@content;
+    }
+}

@@ -10,38 +10,24 @@
 header {
   z-index: 2;
   width: 100%;
-  padding: 2px;
-  border-bottom: 1px solid #403925;
-  background-color: #311833;
-  box-shadow: 10px 10px 10px #000;
-  content: "";
-  display: table;
-  clear: both;
-
+  height:100vh;
+  position: relative;
   p{
-    text-indent: 20px;
-    text-align: left;
-    word-spacing: 0.05rem;
+    margin: 0% auto 30% auto;
     @include brk-pt-md{
       &.mobile-hidden{
         display:inline-block;
       }
       margin-right: 5%;
       width: 450px;
-      float:right;
     }
-
-    @include brk-pt-lg{
-
-    }
-
   }
 }
 
 body {
   font-family: "Raleway", "Georgia", "serif";
   text-shadow: 2px 2px 5px black;
-  background-image: radial-gradient(at top left, rgba(81, 67, 36, 0.75) 40%, rgba(5, 97, 90, 0.7)), url(../imgs/planet-mountains.jpg);
+  background-image: radial-gradient(at top, rgba(81, 67, 36, 0.75)2.5%, rgba(0, 0, 0, 0.7)), url(../imgs/planet-mountains.jpg);
   background-size:cover;
   background-repeat: no-repeat;
   background-attachment:fixed;
@@ -56,42 +42,18 @@ main {
 
  aside {
   border-radius: 5px;
-  background-color: hsla(297, 35%, 13%, 0.8);
-  margin-bottom: 15px;
-  border: 1px solid #403925;
+  margin-bottom: 10%;
   }
-aside:hover{
-  border: 1px solid #beb28e;
-  background-color: hsla(297, 35%, 20%, 1.0);
-  box-shadow: 5px 5px 11px #403925;
-}
 .header-left {
   display: block;
   margin: auto;
   float: initial;
   box-shadow: none;
-  @include brk-pt-md{
-    float: left;
-    content: "";
-    display: table;
-    clear: both;
-    margin: 1%;
-  }
-
 }
 button {
   cursor: pointer;
   display: block;
   margin: 20px auto;}
-
-.infoBox{
-  border-radius: 5px;
-  margin: 75px auto 75px auto;
-  width: 98%;
-  text-align: center;
-  background-color: hsla(297, 35%, 15%, 1);
-  border: 1px solid #403925;
-}
 
 .top{
   margin-top: 25vh;}
@@ -100,14 +62,9 @@ button {
   width: 91%;
   display: inline-block;
   margin-left: 4.5%;
-  border: 1px solid #403925;
   @include brk-pt-md{
-    width: 43%;
-    margin-left: 4.8%;
-  }
-  @include brk-pt-lg{
-    width: 28.3%;
-    margin-left: 3.7%;
+    width: 44%;
+    margin-left: 4.5%;
   }
 }
 

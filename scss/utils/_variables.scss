@@ -1,0 +1,18 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+$bilbo-swash: 'Bilbo Swash Caps', cursive;
+$raleway: 'Raleway', sans-serif;
+
+/* Color Theme Swatches in Hex */
+$neon-purple: #DB18A7;
+$purple: #230121;
+$aqua: #04B3C7;
+$neon-aqua: #05FAFA;
+$black: #0C0C0C;
+
+// Breakpoints
+$brkpoint-md    		 		 : "(min-width: 768px)";
+$brkpoint-lg    		 		 : "(min-width: 1200px)";
+$max-width 				 	 		 : 1400px;
